@@ -1,5 +1,6 @@
 *.csv
 *.xls
+*.xlsx
 ### Node template
 # Logs
 logs
