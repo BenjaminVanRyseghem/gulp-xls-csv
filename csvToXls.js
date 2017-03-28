@@ -82,12 +82,12 @@ module.exports = function(PLUGIN_NAME) {
 						sheet1.set(j + 1, 1, key);
 					});
 
-					for (let i = 2; i < maxRows; i++) {
+					for (let i = 0; i < maxRows; i++) {
 						let line = data[i];
 
 						keys.forEach((key, j) => {
 							let cell = line[key];
-							sheet1.set(j + 1, i, cell);
+							sheet1.set(j + 1, i + 2, cell);
 						});
 					}
 
